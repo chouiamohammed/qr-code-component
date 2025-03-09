@@ -1,0 +1,84 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+  --ff-main: "Outfit", "sans-serif";
+  --fs-main: 15px;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+/*Reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.image-content {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+/*--------Global Styles--------*/
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  font-weight: var(--fw-400);
+  color: var(--Slate-500);
+  background-color: var(--Slate-300);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* ------------layout----------*/
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+/*------------Card Component----------*/
+.card {
+  max-width: 300px;
+  width: 100%;
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/*------Typography---------*/
+.title {
+  color: var(--Slate-900);
+  font-size: 1rem;
+  font-weight: var(--fw-600);
+}
+
+.content,
+.title {
+  margin-bottom: 1rem;
+}
+
+/*----------foooter------*/
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: var(--fw-600);
+}
